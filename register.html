@@ -15,7 +15,6 @@
 
     <link rel="stylesheet" href="css/main.css" />
     <title>Login</title>
-   
   </head>
   <body>
     <!-- Navigation -->
@@ -88,8 +87,32 @@
               <input
                 type="text"
                 class="form-control"
-                name="username"
-                placeholder="Username"
+                name="name"
+                placeholder="Name"
+                required="required"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-user"></i></span>
+              <input
+                type="text"
+                class="form-control"
+                name="email"
+                placeholder="email"
+                required="required"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-user"></i></span>
+              <input
+                type="tel"
+                class="form-control"
+                name="phone"
+                placeholder="Phone"
                 required="required"
               />
             </div>
@@ -107,19 +130,31 @@
             </div>
           </div>
           <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+              <input
+                type="password"
+                class="form-control"
+                name="Re-password"
+                placeholder="Retype Password"
+                required="required"
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
             <button type="submit" class="btn btn-primary login-btn btn-block">
-              Sign in
+              Register
             </button>
           </div>
           <div class="clearfix">
             <label class="pull-left checkbox-inline"
               ><input type="checkbox" /> Remember me</label
             >
-            <a href="#" class="pull-right">Забыли Пароль?</a>
           </div>
         </form>
         <p class="text-center text-muted small">
-          Don't have an account? <a href="#">Sign up here!</a>
+          <a href="#">Go to Login</a>
         </p>
       </div>
     </section>
@@ -131,3 +166,4 @@
     ></script>
   </body>
 </html>
+
